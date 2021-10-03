@@ -3,6 +3,10 @@ services:
   redis-server:
     image: "redis"
   node-app:
+    restart: always
     build: .
     ports:
-      - "4081:8081"
+      - "8081:8081"
+# docker-compose up --build
+# docker-compose up -d
+# docker-compose down
